@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Manrope", sans-serif;
+    background-color: #ffff;
+    color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Footer main style */
+footer {
+    background: #000;
+    color: #fff;
+    padding: 60px 20px 30px;
+    text-align: center;
+}
+
+/* Main content section */
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Left section */
+.f_first {
+    flex: 1.5;
+    text-align: left;
+    padding: 30px;
+}
+
+.f_first h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+    padding-bottom: 2.5rem;
+}
+
+.f_first p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #bbb;
+}
+
+.subscribe_box {
+    display: flex;
+    gap: 0px;
+}
+
+.subscribe_box input {
+    padding: 14px;
+    width: 300px;
+    border: none;
+    border-radius: 6px 0px 0px 6px;
+    outline: none;
+    font-size: 16px;
+}
+
+.subscribe_box button {
+    padding: 14px 20px;
+    background: #65AEF2;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe_box button:hover {
+    background: white;
+}
+
+/* Right section */
+.f_last {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f_last img {
+    max-width: 170px;
+    margin-bottom: 20px;
+    padding-bottom: 2rem;
+}
+
+.footer_links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer_links ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer_links ul li {
+    margin-bottom: 8px;
+}
+
+.footer_links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.footer_links ul li a:hover {
+    color: white;
+}
+
+/* Footer bar (bottom) */
+.footer_bar {
+    background: black;
+    padding: 8px 0;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-top: 1px solid;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer_content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .f_first {
+        text-align: center;
+    }
+
+    .subscribe_box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe_box input {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer_links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .subscribe_box input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .footer_links ul li a {
+        font-size: 14px;
+    }
+
+    .footer_bar {
+        font-size: 12px;
+    }
+}
