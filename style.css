@@ -681,6 +681,10 @@ footer {
     letter-spacing: 0.5px;
     border-top: 1px solid;
 }
+.footer_bar a{
+    text-decoration: none;
+    color: white;
+}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
