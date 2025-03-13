@@ -13,28 +13,28 @@
   <body>
     <!-- -----------------Room booking section------------------ -->
     <section class="room_booking">
-      <div class="booking_container">
+      <div class="booking_container ">
         <h2>Book a Room</h2>
         <p>Discover the perfect space for you!</p>
         <div class="booking-row">
           <!-- Date Picker -->
           <div class="booking-item">
             <label>Date</label>
-            <button class="date-button"> <img src="images/calender.png" alt=""> Check Available</button>
+            <button class="date-button hover"> <img src="images/calender.png" alt=""> Check Available</button>
           </div>
           <!-- Person Selection -->
           <div class="booking_person">
             <label>Person</label>
             <div class="booking_select">
               <span> <img src="images/person.png" alt=""> Adults</span>
-              <select class="dropdown">
+              <select class="dropdown hover">
                 <option>1</option>
                 <option selected>2</option>
                 <option>3</option>
                 <option>4</option>
               </select>
               <span> <img src="images/happy.png" alt=""> Children</span>
-              <select class="dropdown">
+              <select class="dropdown hover">
                 <option selected>0</option>
                 <option>1</option>
                 <option>2</option>
@@ -43,7 +43,37 @@
           </div>
           <!-- Book Now Button -->
            <div class="btn">
-               <button class="book-now">BOOK NOW</button>
+               <button class="book-now .hover {
+                transition: all 0.3s ease-in-out;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            .hover:hover {
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                transform: translateY(-3px);
+            }
+            
+            /* Optional subtle glow effect */
+            .hover::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 300%;
+                height: 300%;
+                background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 10%, transparent 60%);
+                transition: opacity 0.4s, transform 0.4s;
+                transform: translate(-50%, -50%) scale(0.5);
+                opacity: 0;
+            }
+            
+            .hover:hover::after {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+            ">BOOK NOW</button>
            </div>
         </div>
       </div>
